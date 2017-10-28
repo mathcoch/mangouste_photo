@@ -1,0 +1,7 @@
+<div class="menu">
+  <% if  current_user.employee.owner? %>
+    <%= link_to "Paperwork", paperwork_resources_path, class:"menu-item #{"active" if statut[0]}" %>
+    <%= link_to "Starter kit", kit_resources_path, class:"menu-item #{"active" if statut[1]}" %>
+    <%= link_to "Training", training_resources_path, class:"menu-item #{"active" if statut[2]}" %>
+  <% end %>
+</div>

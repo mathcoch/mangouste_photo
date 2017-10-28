@@ -1,0 +1,7 @@
+<% if account_content? %>
+  <%= image_tag current_user.employee.photo_displayed, class: "avatar dropdown-toggle navbar-employee-photo", alt:"profile", width:"60px", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
+  <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+    <li><%= link_to t('navbar.home'), root_url(subdomain: 'www') %></li>
+    <li><%= link_to t('navbar.sign_out'), destroy_user_session_path, method: :delete %></li>
+  </ul>
+<% end %>

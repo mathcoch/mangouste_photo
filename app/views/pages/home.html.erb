@@ -1,2 +1,155 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+ <% content_for(:title_tag) do %>
+  <%= t('.title') %>
+<% end %>
+
+<% content_for(:nav_transparent) do %>
+  <%= true %>
+<% end %>
+
+<div class="global-content">
+
+  <header>
+    <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= image_path 'banner.jpg' %>);">
+      <div class="banner-content">
+        <h1>
+          Tel maître, tel chien ?</br>
+          Participez à notre campagne
+        </h1>
+        <p>Ines Opifanti est la pour vous !</p>
+        <div class="button-cta">
+          <%= link_to "Inscrivez-vous gratuitement", "", class: "button button-green button-margins button-home" %>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="description" class="section section-white-home section-padded">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-2 col-md-5 col-md-offset-0 gif-home">
+          <%= image_tag "comparison_1.jpg", style:"width: 90%;" %>
+        </div>
+        <div class="col-xs-12 col-md-7 homepage">
+          <h2 class="text-green">Ines parcourt la France entre 2017 et 2018 pour vous prendre en photo</h2>
+          <p>
+            Les chiens ressemblent à leur maître, c'est la science qui le dit. Mais qu'adviendrait-il si les maîtres venaient à essayer de ressembler à leur chien? C'est ce qu'a essayé de déterminer la photographe Ines, qui a réalisé une série de clichés de maîtres imitant leur chien.
+            Ines Opifanti est spécialisée dans la photographie de portraits d'humains et d'animaux. Si elle ne pense pas que les maîtres se mettent à ressembler à leur chien au fil du temps, elle a néanmoins souhaité illustrer cette idée commune dans une série de photos intitulée "Dog People".
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<section id="" class="section no-top-margin">
+    <div class="container">
+      <div class="row">
+        <h2 class="text-center text-green">Derniers temoignages</span></h2>
+        <div class="item" id="testimonials">
+         <div class="col-xs-12 col-md-4 employee">
+           <div class="employee-card block">
+             <div class="text-center"><%= image_tag 'participant_1.jpg', class:"avatar-medium text-center" %></div>
+             <h4>Angélique P., Paris</h4>
+             <p>
+              <i class="fa fa-quote-left text-green" aria-hidden="true"></i>
+              Je trouve cela sympa de pouvoir faire de telles photos  ! J'ai reçu rapidement le lot de photos... mais c'est dommage qu'en ayant une 5ème place, on ne reçoit pas aussi une médaille !
+              <i class="fa fa-quote-right text-green" aria-hidden="true"></i>
+            </p>
+           </div>
+         </div>
+
+         <div class="col-xs-12 col-md-4 employee">
+           <div class="employee-card block">
+             <div class="text-center"><%= image_tag 'participant_2.jpg', class:"avatar-medium text-center" %></div>
+             <h4>Carole P., Nantes</h4>
+             <p>
+              <i class="fa fa-quote-left text-green" aria-hidden="true"></i>
+              Ines est très sympa et à l'oeil pour faire de super photo... hâte que son livre sorte !
+              <i class="fa fa-quote-right text-green" aria-hidden="true"></i>
+            </p>
+           </div>
+         </div>
+
+         <div class="col-xs-12 col-md-4 employee">
+           <div class="employee-card block">
+             <div class="text-center"><%= image_tag 'participant_3.jpg', class:"avatar-medium text-center" %></div>
+             <h3 class="color-green text-center"><%= t('.testimonials.third.name_html') %></h3>
+             <h4>Paul et Christelle, Paris</h4>
+             <p>
+              <i class="fa fa-quote-left text-green" aria-hidden="true"></i>
+              Expérience marrante et super souvenir... quelle belle photo
+              <i class="fa fa-quote-right text-green" aria-hidden="true"></i>
+            </p>
+           </div>
+         </div>
+       </div>
+
+
+      </div>
+      </div>
+</section>
+
+  <section id="description" class="section section-white-home section-padded">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-7 homepage">
+          <h2 class="text-green">Ines parcourt la France entre 2017 et 2018 pour vous prendre en photo</h2>
+          <p>
+            Ines est une photographe allemande qui a eu l’excellente idée d’immortaliser des maîtres et leurs meilleurs amis à quatre pattes dans d’inoubliables portraits. Les hommes et les femmes tentent ainsi, dans cette série photographique, d’imiter les expressions très humaines de leurs adorables chiens. Ines Opifanti est une photographe talentueuse habitant à Hambourg (Allemagne). Il y a 3 ans, cette dernière a adopté un chiot et a très vite remarqué sa capacité incroyable à prendre des expressions faciales qui se rapprochent étonnement de celles des humains. Il lui est alors venu une idée géniale : « Comment, à leur tour, les humains liraient les expressions faciales de leurs toutous ? ». Ni une, ni deux, le projet était lancé. Elle convie alors quelques volontaires accompagnés de leur chien à venir s’essayer à l’exercice devant son objectif. Les chiens étaient les premiers à poser. Assis sur un petit tabouret, ils devaient surtout se sentir en confiance et se comporter le plus naturellement possible, en affichant leurs plus belles mimiques. Ils ont donc eu droit à de nombreuses friandises, des mots doux et des paroles rassurantes de leurs maîtres. Puis ce fut au tour de ces derniers de poser face à Ines. Les 30 maîtres et maîtresses se sont donc succédé pour imiter le mieux possible leurs amis à quatre pattes. Et voici donc le résultat ! Vous pouvez d’ailleurs retrouver l’intégralité du travail de la photographe dans notre session "Projet".
+          </p>
+          <p>
+            Ines repart à la conquête de la relation chien / maître avec une <strong>nouvelle serie de portraits qu'elle va réaliser en France tout au long des 12 mois à venir</strong> (de octobre 2017 à spetembre 2018). L'idée étant de prendre une maîtresse / maître avec son chien dans une pose de plein pied. Les personnes acceptant de participer auront la chance de bénéficier de somptueuses photos et pour ceux selectionner et qui le souhaitent - d'une parution dans le prochain ouvrage d'Ines.
+          </p>
+          <p>Les <strong>prochaines dates d'Ines sont à jour dans la section ci-dessous, n'hésitez pas à vous inscrire</strong> !</p>
+          <%= image_tag "ouvrage.jpg", style:"width: 40%" %>
+        </div>
+        <div class="col-xs-8 col-xs-offset-2 col-md-5 col-md-offset-0 gif-home">
+          <%= image_tag "ines.jpg", style:"width: 90%;" %>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-form" class="section no-top-margin">
+    <div class="padded">
+      <h2 class="text-green text-center">Prochaines dates</h2>
+       <ul class="padded">
+         <li><p>16 au 28 octobre à <strong>Nantes</strong> (au Château des Ducs de Bretagne)</p></li>
+         <li><p>6 au 25 novembre à <strong>Paris</strong> (au studio Harcourt)</p></li>
+         <li><p>4 au 9 décembre à Bordeaux (au Château Pape Clément)</p></li>
+         <li><p>22 janvier au 17 févirer à Marseille (au Musée des Civilisations)</p></li>
+       </ul>
+     </div>
+  </section>
+
+  <section id="partners" class="section section-padded margin-adjustment">
+    <%= render 'pages/logos_partners' %>
+  </section>
+</div>
+
+
+<% content_for(:after_js) do %>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script>
+  window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    "position": "bottom-left",
+    "palette": {
+      "popup": {
+        "background": "#2a3453",
+        "text": "#ffffff"
+      },
+      "button": {
+        "background": "transparent",
+        "text": "#ffffff",
+        "border": "#ffffff"
+      }
+    },
+    "content": {
+      "href": "<%= root_path %>",
+      "message": "<%= t('.cookieconsent.message') %>",
+      "dismiss": "<%= t('.cookieconsent.button') %>"
+    },
+  })});
+  </script>
+<% end %>

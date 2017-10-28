@@ -1,0 +1,28 @@
+<div class="block-menu">
+  <%= link_to employees_welcome_message_path(@employee), class:"no-decoration" do %>
+    <div class="block-settings-menu hover-effect first-settings-menu <%= "active-menu" if statut[0] == "active" %>" id="company">
+        <%= image_tag "accounts/settings/menu/company.svg", class: "menu-image" %>
+        <div class="menu-text">
+          <h3>Company values</h3>
+        </div>
+    </div>
+  <% end %>
+
+  <%= link_to employees_company_overview_path(@employee), class:"no-decoration" do %>
+    <div class="block-settings-menu hover-effect <%= "active-menu" if statut[1] == "active" %>" id="users">
+        <%= image_tag "accounts/settings/menu/onboarding.svg", class: "menu-image" %>
+        <div class="menu-text">
+          <h3>Company overview</h3>
+        </div>
+    </div>
+  <% end %>
+
+  <%= link_to onboardee_path(@employee), class:"no-decoration" do %>
+    <div class="block-settings-menu hover-effect <%= "active-menu" if statut[2] == "active" %>" id="onboarding">
+        <%= image_tag "accounts/avatars/default.png", class: "menu-image" %>
+        <div class="menu-text">
+          <h3>Your dashboard</h3>
+        </div>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,444 @@
+.dashboard{
+  width: 80%;
+  margin: auto;
+  margin-bottom: 60px;
+  margin-top:80px;
+}
+.margin{
+  margin: 30px 0;
+}
+.padding{
+  padding: 30px 0;
+}
+.border-top{
+  border-top: 1px solid #eee;
+}
+.border-bottom{
+  border-bottom: 1px solid #eee;
+}
+.app-body{
+  color: white;
+}
+.app-body h3,
+.app-body h4{
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+  margin:0;
+  line-height: 100%;
+}
+.main-dash{
+  cursor: pointer;
+}
+.dash-pie{
+}
+.dash-pie h3{
+  color: #2A3453;
+}
+h4.big{
+  font-size:40px;
+}
+.bottom-right{
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+.app-body .min-height{
+  // min-height: 250px;
+}
+.col.red{
+  display:flex;
+}
+.col.red h3{
+  position:absolute;
+}
+.fa-bell-o{
+  margin:auto;
+}
+.padded{
+  padding: 25px;
+}
+
+.padded-special {
+  padding-left: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-right: 25px;
+}
+
+.progress-bar{
+  background: $blue-ultra-light;
+}
+.progress-bar .dark-gray{
+  background: #828282;
+}
+.to-on-board-carousel{
+  list-style-type: none;
+  text-align: center;
+  margin:0;
+  padding:0;
+}
+.to-onboard ul,
+.to-onboard li{
+  list-style-type:none;
+}
+#progress-dash{
+  margin-bottom:1%;
+}
+#progress-dash h2 {
+  font-weight:bold;
+  font-size:18px;
+}
+#progress-dash h3 {
+  font-weight:bold;
+  font-size:16px;
+}
+#progress-dash .pull-right{
+  text-align: right;
+}
+.lt{
+  background: #64abff;
+}
+.bg{
+  background: rgba(46, 91, 236, 0.7);
+  position: relative;
+  padding: 10px;
+}
+.dk{
+  background: #227fef;
+}
+.red{
+  color: #ea5757;
+  //border: 5px solid #ea5757;
+}
+/****** to put on global scss *******/
+.img-thubnail{
+  width: 100%;
+}
+// .dashboard h2{
+  //margin-bottom: 50px;
+//}
+.padding-card {
+  padding: 10px;
+  &:first-child {
+    padding-right: 0;
+  }
+  &:last-child {
+    padding-left: 0;
+  }
+}
+
+.size-image {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  img {
+    height: 80px;
+  }
+}
+
+.color-green {
+  color: $green;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-red {
+  color:#ea5757;
+}
+
+.dl{
+  background: $blue-light;
+}
+
+.text-blue {
+  color:$blue !important;
+}
+
+.lower-format {
+  font-size:60px;
+}
+.bottom-dash{
+  margin-top:1%;
+  margin-bottom:5%;
+}
+.bottom-dash h3{
+  color:#2A3453;
+}
+#progress form{
+  margin-right:0;
+}
+#progress form,
+#progress input,
+#progress label{
+  color:black;
+}
+.to-onboard{
+  display:flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width:110px;
+  height:110px;
+  margin:25px;
+}
+.to-onboard a{
+  width: 110px;
+  height:110px;
+  background-size: 110px 110px !important;
+  border-radius: 100px;
+  display:flex;
+  text-decoration: none;
+}
+.to-onboard a .fa{
+  margin:auto;
+  font-size:110px;
+  color:#3e96ff;
+  opacity: 0;
+}
+.to-onboard a .fa.plus-fa{
+  opacity: 1;
+}
+.to-onboard a:hover .fa{
+  color:white;
+  opacity:1;
+}
+
+
+/****** CARD ********/
+.main-dash {
+  // min-height: 250px;
+  width:33%;
+  padding:0!important;
+  margin-right:0.5%;
+  margin-bottom: 1%;
+  position: relative;
+  perspective: 800px;
+}
+.main-dash.no-margin{
+  margin-right:0%;
+}
+.main-dash ul,
+.main-dash li{
+  list-style-type:none;
+}
+.main-dash .lower-format{
+  font-size:24px;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+.card .front,
+.card .back {
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  backface-visibility: hidden;
+  overflow: auto;
+}
+.card .front {
+  background: $green;
+  z-index: -1;
+}
+.card .back {
+  background: $green;
+  transform: rotateY( 180deg );
+}
+.card.flipped {
+  transform: rotateY( 180deg );
+}
+.card img{
+  margin: 30px auto auto auto;
+}
+
+.border-green {
+  border-left: 2px solid $green;
+  text-align:left !important;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.border-red {
+  border-left: 2px solid #ea5757;
+  text-align:left !important;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.border-blue {
+  border-left: 2px solid $blue;
+  text-align:left !important;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.white-background {
+  background-color: white;
+}
+
+.grey-background {
+  background-color: $blue-ultra-light;
+}
+
+.dashboard.show-new-hire{
+  margin-top:70px;
+}
+.new-hire-dash .col-xs-6{
+  padding:0;
+}
+.dashboard .section.flex,
+.dashboard .section.bottom-dash{
+  margin-right:0;
+  margin-left:0;
+}
+.show-new-hire h2 {
+  margin-bottom: 0px;
+}
+.dashboard .bg-blue{
+  background:$blue;
+}
+.dashboard .bg-blue h2{
+  color:white;
+}
+#tabs{
+  overflow:hidden;
+}
+.profil-title-tab,
+.profil-title-tab p,
+.profil-title-tab a{
+  color:$gray;
+}
+
+.profil-title-tab:hover,
+.profil-title-tab:hover p,
+.profil-title-tab:hover a{
+  color:$gray-light;
+}
+.profil-title-tab a{
+  text-decoration:none;
+}
+.profil-title-tab a img{
+  margin-right: 25px;
+}
+.profil-title-tab{
+  border-bottom:1px solid $gray;
+  padding:15px 0;
+  cursor:pointer;
+}
+#tabs{
+  margin-top: 40px;
+}
+#tabs p{
+  color:$gray;
+}
+#tabs i{
+  color:$red;
+}
+.tab-content img{
+  display:inline;
+}
+.tab-title{
+  cursor:pointer;
+}
+.tab-content{
+  display: flex;
+  align-items: center;
+  padding:20px 0;
+}
+.tab-content .big-font{
+  font-size:80px !important;
+  font-weight:bold;
+}
+.tab-content .align-right{
+  text-align:right;
+}
+.tab-content .margin-50{
+  margin:50px;
+}
+.tab-title{
+  padding:10px 0;
+  margin: 5px 0;
+  // border-bottom:1px solid #eee;
+}
+.tab-title .col{
+  padding:0 !important;
+}
+.tab-title .avatar{
+  margin-right:5px;
+}
+.tab-title .avatar,
+.tab-title .avatar+p{
+  display:inline;
+}
+.tab-title i{
+  color:$red;
+}
+.tab-title p,
+.tab-title i{
+  margin:6px 0 0 0 !important;
+}
+.color-green h2{
+  color:$green;
+  font-weight:bold;
+}
+a.global-pie{
+  position:relative;
+  width: 220px;
+  height: 220px;
+}
+.pie-global{
+  position: relative;
+  overflow: hidden;
+  height: 225px;
+}
+.pie{
+  position:absolute;
+  width:220px;
+  height: 220px;
+}
+.pie-generic{
+  position:relative;
+  width: 350px;
+  height: 350px;
+}
+.pie-link {
+  padding: 30px 20px 20px 0px;
+
+}
+img.pie{
+  width:120px;
+  height:120px;
+  top:50px;
+  left:50px;
+}
+.section-index{
+  padding-top: 0px;
+}
+
+.news-logo {
+  width: 30px;
+}
+
+.margin-news {
+  margin-bottom: 9px !important;
+  margin-top: 9px !important;
+}

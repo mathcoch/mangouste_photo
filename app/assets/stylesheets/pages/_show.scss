@@ -1,0 +1,317 @@
+.header-employee{
+  position:relative;
+  display: flex;
+  justify-content:center;
+}
+
+.header-employee img{
+  background:white;
+  padding:3px;
+}
+.header-employee p{
+  display:none;
+}
+.show_employee li img{
+  height: 50px;
+}
+
+.show-new-hire h2#satisfactions {
+  margin-left: 3% !important;
+}
+.employee-avatar{
+  position: absolute;
+  top: -200px;
+}
+.show_with_badge {
+  position: relative;
+}
+.show_with_badge i {
+  color: $green;
+  position: absolute;
+  top: -8px;
+  right: -5px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  .header-text{
+    width: 100px;
+  }
+  h4{
+    font-weight: lighter;
+    color: $blue-dark;
+  }
+}
+.card-meeting{
+  position: relative;
+}
+.picto{
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -6px;
+  left: -12px;
+  background-color: $blue-light;
+  border-radius: 50%;
+  z-index: 1000;
+}
+.card-meeting .block{
+  padding: 40px;
+}
+#small-padding{
+  padding-top: 30px;
+}
+.picto img{
+  max-width: 40px;
+  max-height: 40px;
+}
+.block-header h2{
+  margin-bottom: 10px !important;
+}
+section#section-alert{
+  padding: 25px;
+  background-color: $blue-dark;
+  display: none;
+}
+section#section-alert h2{
+  color: white;
+}
+section#section-alert h3{
+  color: white;
+}
+section#section-alert p{
+  color: white;
+}
+.section-show {
+  margin-left: 0% !important;
+  margin-right: 0% !important;
+}
+
+#notification-button{
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background-color: $blue-dark;
+  color: white;
+  padding: 8px 8px 8px 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  &:hover{
+    text-decoration: none;
+    opacity:0.5;
+  }
+}
+#paperworks-button{
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  background-color: $green;
+  font-weight: bold;
+  color: white;
+  padding: 8px 8px 8px 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  .link-decoration-none{
+    &:hover{
+    color: white;
+    }
+  }
+  &:hover{
+    text-decoration: none;
+    opacity:0.5;
+  }
+}
+
+section.section-banner{
+  position: relative;
+}
+
+.block-show{
+  position: relative;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 1px 50px 3px rgba(0,32,126,.1);
+  // cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  transition: 0.2s;
+}
+.block-show-hovered:hover{
+  box-shadow: 0 1px 25px 1px rgba(0,32,126,.05);
+  transition: 0.2s;
+}
+
+.block-show-content{
+    p{
+    margin-top: 13px;
+    color: #425e78;
+    line-height: 23px;
+    font-weight: 400;
+    }
+}
+
+.block-show-content-home{
+  display: flex;
+  height: 75px;
+    p{
+    margin-top: 13px;
+    color: #425e78;
+    line-height: 23px;
+    font-weight: 400;
+    }
+}
+
+.block-show-content-image {
+  img{
+    width: 50px;
+    margin-right: 20px;
+  }
+}
+.graph-relative{
+  position: relative;
+}
+.section-satisfaction{
+  position: relative;
+  margin-bottom: 0px;
+}
+#satisfaction-button{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: $blue-dark;
+  color: white;
+  padding: 8px 8px 8px 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+#satisfaction-button:hover{
+  background-color: $blue-dark;
+  color: white;
+  text-decoration: none;
+  opacity:0.5;
+}
+section#section-list-satisfaction{
+  padding: 25px;
+  background-color: $blue-dark;
+  display: none;
+  margin-bottom: 40px;
+}
+section#section-list-satisfaction h5{
+  color: white;
+}
+section#section-list-satisfaction h3{
+  color: white;
+}
+section#section-list-satisfaction p{
+  color: white;
+}
+
+#padding-show-bottom {
+  padding-top: 0 !important;
+}
+
+.space-bottom-show {
+  padding-bottom: 30px;
+}
+
+.color-title-details h2{
+  color: white;
+}
+.show_employee_lesson{
+  padding-left: 0 !important;
+}
+.block-kit_resources{
+  height: 285px;
+  overflow: auto;
+}
+.block-trainings{
+  height: 260px;
+  overflow: auto;
+}
+.block-meetings{
+  height: 270px;
+  overflow: auto;
+}
+.no-padding-right{
+  padding-right: 0px;
+}
+
+
+.margin-box {
+  margin-bottom:0px !important;
+  margin-top: 10px;
+}
+.show_employee > li{
+  padding-top:8px;
+  padding-right:8px;
+  padding-bottom:8px;
+  padding-left:8px;
+}
+.show_employee_training{
+  list-style-type: none;
+  padding: 0;
+}
+
+// Card for resources
+.block-show{
+  overflow: hidden;
+  .block-show-header{
+    margin: 0;
+    padding: 6px 6px 3px 6px;
+    background-color: $green;
+    p {
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+  }
+  .show-items{
+    overflow: scroll;
+    .block-show-content{
+      margin-top: 15px;
+      .item{
+        padding: 6px 3px 3px 3px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        p{
+          margin: 0;
+          text-align: center;
+          font-size: 12px;
+          color: $blue-dark;
+        }
+        &:hover{
+          background-color: $blue-ultra-light;
+        }
+        &.item-pending{
+          opacity: 0.3;
+          p{
+            color: $red-badge;
+            font-weight: bold
+          }
+          &:hover{
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+.new-feedback{
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  a{
+    font-size: 16px;
+  }
+}

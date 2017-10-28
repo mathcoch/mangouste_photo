@@ -1,0 +1,19 @@
+
+.current-sort {
+  padding-right: 16px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 12px;
+}
+a.current-sort{
+  text-decoration: none;
+  color: $green;
+}
+
+.asc {
+  background-image: image_url('accounts/pictos/caret-up.png');
+}
+
+.desc {
+  background-image: image_url('accounts/pictos/caret-down.png');
+}

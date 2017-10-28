@@ -1,0 +1,87 @@
+/* -------------------------------------
+ * Fonts
+ * ------------------------------------- */
+// Google fonts
+
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,700');
+
+$base-font:  'Dosis', helvetica, sans-serif;
+$header-font:  'Dosis', helvetica, sans-serif;
+
+// Font-size and line-height
+$base-size: 13px;
+$base-height: 1.4;
+$h1-size: 34px;
+$h2-size: 28px;
+$h3-size: 15px;
+$h4-size: 13px;
+$p-size: $base-size;
+
+/* -------------------------------------
+ * Colors
+ * ------------------------------------- */
+// Scheme
+
+
+$red: #dd687b;
+$red-error: #a94442;
+$red-normal: #F75D5D;
+$red-dark: #CD4B4B;
+$red-badge: #FA3E3E;
+
+$blue-ultra-light: #F3F7FD;
+$blue-light: #698AF1;
+$blue: #2e5bec;
+$blue-dark: #2A3453;
+
+$green: #37DDF3;
+$green-light: #3de59a;
+$green-xlight: #59F2AD;
+
+$gray: #828282;
+$gray-normal: #BCBDBD;
+$gray-medium: #D4DDE4;
+$gray-light: #f4f8fd;
+$gray-xlight: #FAFBFC;
+$black: #425e78;
+
+$purple-dark: #5141B4;
+$purple-light: #7A69E5;
+
+$yellow: #EFD358;
+$yellow-dark: #FFCD38;
+$orange: #E67E22;
+
+$orders: $orange;
+$trainings: $yellow;
+$satisfactions: $red;
+$meetings: $blue;
+$meeting_feedbacks: $blue-dark;
+
+$brand-color: $blue;
+$cat1: $green;
+$cat2: $red;
+$cat3: $blue-dark;
+$cat4: $blue-light;
+$cat5: #ADACA7;
+$cat6: $yellow-dark;
+$cat7: $green-light;
+
+$onboarding: $green;
+
+$h1-color: white;
+$h2-color: $blue;
+$h3-color: $blue;
+$h4-color: $gray;
+
+$rate0: $red;
+$rate1: $red;
+$rate2: $orange;
+$rate3: $orange;
+$rate4: $yellow;
+$rate5: $yellow;
+$rate6: $green-light;
+$rate7: $green-light;
+$rate8: $green-light;
+$rate9: $green;
+$rate10: $green;

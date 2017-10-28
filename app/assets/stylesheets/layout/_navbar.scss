@@ -1,0 +1,194 @@
+/* Main class */
+.navbar-wagon {
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  // box-shadow: 0 1px 50px 3px rgba(0,32,126,.1);
+  background-color: white;
+  transition: all 0.3s ease;
+  display: flex;
+  height: 50px;
+  padding: 0px 30px;
+  align-items: center;
+  justify-content: space-between;
+  a{
+    color: $blue-dark;
+  }
+  .button{
+    color: white;
+  }
+}
+.nav-up {
+    display: none;
+}
+
+.nav{
+  padding: 20px;
+}
+
+
+/* Optional class to fix the navbar on top */
+.navbar-wagon-fixed {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  width: 100%;
+}
+
+/* Navbar logo */
+.navbar-wagon-brand img {
+  width: 110px;
+}
+a.navbar-wagon-brand:hover {
+  text-decoration: none;
+}
+
+/* Navbar right section (with form, links, button) */
+.navbar-wagon-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Navbar item */
+.navbar-wagon-item {
+  flex: 0 1 auto;
+  cursor: pointer;
+  padding: 0 20px;
+  &.menu-mobile{
+    padding-right: 0;
+  }
+}
+
+/* Navbar standard link */
+.navbar-wagon-link{
+  color: $blue-dark;
+  text-align: center;
+  font-weight: normal;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+.navbar-marketing{
+  font-size: 14px;
+  opacity: 0.5;
+  &.button{
+    opacity: 1;
+  }
+  &:hover{
+    opacity: 1;
+  }
+}
+.navbar-account{
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  justify-content: space-around;
+  height: 50px;
+  width: 130px;
+  &.onboard{
+    color: $green;
+    font-weight: bold;
+  }
+  &.active{
+    background-color: $green;
+    color: white;
+    &:hover{
+      background-color: $green;
+      color: white;
+    }
+  }
+  &:hover{
+    background-color: $blue-ultra-light;
+  }
+}
+a.navbar-wagon-link:hover {
+  text-decoration: none;
+}
+.navbar-wagon-brand:focus{
+  text-decoration: none;
+}
+/* Navbar right button */
+.navbar-wagon-button {
+  margin-left: 10px;
+  padding: 0 20px;
+  border-radius: 20em;
+  line-height: 40px;
+  background-color: #D23333;
+  color: white;
+  font-size: 14px;
+  border: 2px solid #D23333;
+}
+.navbar-wagon-button:hover {
+  color: white;
+  background: #D23333;
+  border-color: #ac2626;
+}
+
+/* Navbar dropdown menu */
+.navbar-wagon-dropdown-menu {
+  margin-top: 0px;
+  box-shadow: none;
+  background-color: $blue-ultra-light;
+  border-width: 0;
+  position: fixed;
+  right: 0px;
+  top: 50px;
+  li {
+    font-weight: lighter;
+    p{
+      font-style: normal;
+      padding: 10px 20px;
+      margin: 0;
+    }
+  }
+}
+.navbar-wagon-dropdown-menu li > a {
+  transition: color 0.3s ease;
+  font-weight: lighter !important;
+  color: $blue-dark !important;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 22px !important;
+  padding: 10px 20px;
+}
+.navbar-wagon-dropdown-menu li > a:hover {
+  background: white !important;
+}
+
+#nav-left{
+  flex: 1 0;
+}
+.dropdown{
+  cursor: pointer;
+}
+.dropdown:hover img{
+  opacity: 0.8;
+}
+
+.nav-transparent{
+  background-color: transparent;
+  box-shadow: none;
+  a{
+    color: white;
+  }
+}
+.btn-transparent{
+  background-color: white !important;
+}
+a.btn-transparent{
+  color: $blue-dark !important;
+}
+.notification{
+  position: relative;
+  padding-top: 3px;
+  font-size: 20px;
+  color: $gray-medium;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover{
+    color: $blue-dark;
+  }
+  span.badge{
+    background-color: $red-badge;
+  }
+}

@@ -1,0 +1,70 @@
+#signin, #user_new{
+  background-color: $gray-xlight;
+  .block{
+    padding: 80px;
+    border-radius: 5px;
+    .block-header{
+      h3{
+        font-size: 20px;
+      }
+    }
+    .block-content{
+      margin-top: 20px;
+      .form-inputs{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .checkbox input[type="checkbox"]{
+          margin-top: -4px;
+        }
+        p.help-block{
+          margin-top: 0;
+          text-align: right;
+          font-size: 10px;
+          font-color: $gray-light;
+        }
+      }
+      .form-actions{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        input.button-green{
+          background-color: $green;
+          border-width: 0;
+          height: 26px;
+          padding: 8px 12px 8px;
+          border-radius: 4px;
+          line-height: normal;
+          color: #fff;
+          font-size: 10px;
+          font-weight: 900;
+          text-align: center;
+          letter-spacing: 1.5px;
+          text-decoration: none;
+          text-transform: uppercase;
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+          &:hover{
+            box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+          }
+        }
+        .password{
+          font-size: 10px;
+        }
+      }
+      .form-links{
+        font-weight: lighter;
+        font-size: 10px;
+      }
+    }
+  }
+}
+#user_new{
+  .block .block-header{
+    p{
+      font-weight: lighter;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+  }
+}

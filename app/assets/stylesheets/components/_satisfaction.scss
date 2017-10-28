@@ -1,0 +1,171 @@
+.satisfaction {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 3px;
+  transition: all 0.15s ease;
+}
+.satisfaction-rating h5{
+  padding-right: 20px;
+  text-align: center;
+  transition: all 0.15s ease;
+  font-weight: bold;
+  color: white;
+  line-height: 20px;
+}
+
+.satisfaction-comment {
+  flex: 1 1 auto;
+}
+.satisfaction-comment h4 {
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  margin-top: 0;
+}
+.satisfaction-comment p {
+  font-weight: lighter;
+  color: white;
+  margin-bottom: 0;
+}
+
+
+#pulse-check{
+  .block-container{
+    height: 800px;
+    background-color: $green;
+    h2{
+      color: white;
+      text-align: left;
+      margin-left: calc(10% - 20px);
+    }
+    .block-questions{
+      position: absolute;
+      width: 100%;
+      height: 75%;
+      top: 15%;
+      right: -10%;
+      .calendar{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        text-align: center;
+        img{
+          margin-bottom: 5px;
+        }
+        p{
+          font-size: 12px;
+          color: $gray;
+          font-weight: lighter;
+        }
+      }
+      .avatar-medium{
+        width: 110px;
+        border-width: 2px;
+        border-color: white;
+        border-style: solid;
+        position: absolute;
+        top: -40px;
+        left: 40px;
+
+      }
+      .block-content{
+        margin-top: 60px;
+        h3{
+          font-size: 18px;
+          font-weight: lighter;
+          color: $blue-dark;
+          margin-top: 0px;
+          margin-bottom: 20px;
+        }
+        .control-label.radio_buttons{
+          display: block;
+        }
+        .radio-buttons-wrapper{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .radio{
+          flex: 1 1 auto;
+          margin: 0;
+          label{
+            text-align: center;
+            background-color: $blue-ultra-light;
+            border-width: 2px;
+            border-style: solid;
+            border-color: white;
+            border-radius: 7px;
+            transition: all 0.3s ease;
+            font-weight: lighter;
+            padding: 6px 0 3px 0;
+            height: 100%;
+            width: 100%;
+
+            &.rate_0:hover{
+              background-color: $rate0;
+              color: white;
+            }
+            &.rate_1:hover{
+              background-color: $rate1;
+              color: white;
+            }
+            &.rate_2:hover{
+              background-color: $rate2;
+              color: white;
+            }
+            &.rate_3:hover{
+              background-color: $rate3;
+              color: white;
+            }
+            &.rate_4:hover{
+              background-color: $rate4;
+              color: white;
+            }
+            &.rate_5:hover{
+              background-color: $rate5;
+              color: white;
+            }
+            &.rate_6:hover{
+              background-color: $rate6;
+              color: white;
+            }
+            &.rate_7:hover{
+              background-color: $rate7;
+              color: white;
+            }
+            &.rate_8:hover{
+              background-color: $rate8;
+              color: white;
+            }
+            &.rate_9:hover{
+              background-color: $rate9;
+              color: white;
+            }
+            &.rate_10:hover{
+              background-color: $rate10;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    .controls{
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+  }
+}
+input.radio_buttons{
+  display: none;
+}
+input[type="radio"]{
+  &:checked + label{
+    background-color: $blue !important;
+    color: white;
+  }
+}
+.emoji{
+  font-size: 30px;
+}

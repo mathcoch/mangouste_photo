@@ -1,0 +1,520 @@
+// Navigation menu
+#onboarding-track{
+  h3 i{
+    color: $gray-medium;
+  }
+  .menu{
+    display: flex;
+    justify-content: space-around;
+    font-weight: lighter;
+  }
+  a.menu-item{
+    text-decoration: none;
+  }
+  .menu-item{
+    width: 16.667%;
+    background-color: $gray-medium;
+    text-align: center;
+    color: white;
+    padding: 10px 10px 7px 10px;
+    border-color: white;
+    border-width: 0px;
+    border-style: solid;
+    transition: all 0.3s ease;
+    & i{
+      display: none;
+    }
+    &.active{
+      background-color: $green;
+    }
+    &.done{
+      background-color: $green;
+      & i{
+        display: inline;
+      }
+    }
+  }
+}
+// End of Navigation menu
+
+
+// Paperworks step
+#onboarding-track{
+  .field-content-new{
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bolder;
+    color: $green;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease;
+    i {
+      padding-right: 20px;
+    }
+    p {
+      color: $blue-dark;
+      font-weight: lighter;
+    }
+    &:hover{
+      color: $green-light;
+    }
+  }
+  .add-menu-wrapper-paperwork{
+    display: none; // JS to add flex after menu appears
+    right: -20px;
+    left: -20px;
+    width: calc(100% + 40px);
+    background-color: $green;
+    overflow: hidden;
+    h3{
+      margin-bottom: 15px;
+    }
+    .paperwork-existing{
+      .form-group{
+        height: 220px;
+        overflow-y: scroll;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        label{
+          color: white;
+        }
+        span.radio{
+          flex: 0 0 50%;
+        }
+        input[type="radio"]{
+          &:checked + label{
+            background-color: $green-light !important;
+          }
+        }
+      }
+      .paperwork-item{
+        height: 24px;
+        border-radius: 5px;
+        padding: 5px 6px 1px 6px;
+        margin: 5px 0;
+        font-weight: lighter;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        &:hover{
+          background-color: $green-light;
+        }
+      }
+      input[type="submit"]{
+        background-color: white;
+        border-radius: 20px;
+        color: $green;
+        margin-left: 20px;
+        transition: all 0.6s ease;
+        padding: 3px 5px 0px 5px;
+        height: 21px;
+        &:hover{
+          background-color: $green;
+          color: white;
+        }
+      }
+    }
+    .paperwork-new{
+      height: 220px;
+      overflow-y: scroll;
+      .new_paperwork_resource{
+        display: flex;
+        h3{
+          width: 100%;
+        }
+        .new-field{
+          flex: 1 0 auto;
+        }
+        input[type="submit"]{
+          background-color: white;
+          border-radius: 20px;
+          color: $green;
+          margin-left: 20px;
+          transition: all 0.6s ease;
+          padding: 3px 5px 0px 5px;
+          height: 21px;
+          &:hover{
+            background-color: $green;
+            color: white;
+          }
+        }
+      }
+      label{
+        color: white;
+      }
+      input[type="radio"]{
+        &+label{
+          padding: 5px 5px 1px 5px;
+          border-radius: 3px;
+          font-size: 18px;
+        }
+        &:checked + label{
+          background-color: $green-light !important;
+          color: white;
+        }
+      }
+    }
+  }
+  .field{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    &:hover{
+      background: $gray-light;
+      & .field-controls .fa-trash{
+        color: $blue;
+      }
+      & .field-controls .fa-pencil{
+        color: $blue;
+      }
+    }
+    .field-label, .field-content{
+      flex: 1 1 auto;
+    }
+    .field-label{
+      width: 15%;
+      font-weight: lighter;
+    }
+    .field-controls .fa-trash{
+      padding-left: 20px;
+      color: white;
+    }
+    .field-controls .fa-pencil{
+      padding-left: 0;
+      color: white;
+    }
+  }
+}
+// End of Paperworks step
+
+
+.form-col{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+td.day.active{
+  background-color: $green !important;
+}
+
+// New template (radio)
+#onboarding-track{
+  .radio{
+    margin: 0;
+    padding: 0;
+    & label{
+      width: 100%;
+      padding: 0;
+      .employee-card{
+        height: 212px;
+        transition: all 0.5s ease;
+        h3, h4{
+          color: $green;
+        }
+        h4{
+          font-weight: lighter;
+        }
+      }
+    }
+    .radio_buttons{
+      display: none;
+    }
+  }
+  input[type="radio"]{
+    &:checked + .employee-card{
+      background-color: $green;
+      h3, h4, i{
+        color: white;
+      }
+    }
+  }
+}
+
+// Meetings step
+#onboarding-track{
+  .meeting-cards{
+    .kit-card{
+      h3, p{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+  #onboarding-meetings{
+    #search-input{
+      margin: 5px 5px 10px 5px;
+    }
+    #meetings{
+      width: 100%;
+      .small-card{
+        display: flex;
+        border-radius: 5px;
+        padding: 3px;
+        height: 40px;
+      }
+    }
+    .form-group{
+      height: 240px;
+      overflow: auto;
+    }
+ }
+}
+// Starter kits
+
+.kit{
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+#new{
+  .kit-card{
+    background-color: white;
+  }
+}
+.kit-card{
+  background-color: $gray-light;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 20px 5px;
+  margin: 30px 20px;
+  height: 146px;
+  .kit-delete i{
+    font-size: 12px;
+    color: $gray;
+    &:hover{
+      color: $blue;
+    }
+  }
+  h3{
+    color: $green;
+  }
+  i{
+    font-size: 50px;
+  }
+  &.meeting{
+    h3{
+      margin-top: 9px;
+    }
+    p{
+      margin: 3px;
+      font-weight: lighter;
+      color: $green;
+    }
+  }
+}
+.kit:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+.add-menu-wrapper{
+  display: none; // JS to add flex after menu appears
+  flex-wrap: wrap;
+  align-items: flex-start;
+  z-index: 10;
+  position: fixed;
+  top: 20%;
+  right: 0px;
+  max-height: 340px;
+  width: 200px;
+  background-color: $green;
+  border-radius: 5px;
+  padding: 5px;
+  i{
+    color: white;
+  }
+  h3{
+    color: white;
+    flex: 1 1 100%;
+    margin: 0;
+  }
+  p{
+    font-weight: lighter;
+    font-size: 12px;
+    color: white;
+    margin: 5px 0 0 0;
+  }
+  .radio{
+    flex: 0 0 33.3%;
+    border-radius: 5px;
+    padding: 3px;
+    height: 70px;
+    &:hover{
+      background-color: #59F2AD;
+    }
+  }
+  .radio.line{
+    flex: 0 0 100%;
+    height: 40px;
+    .small-card{
+      display: flex;
+      img{
+        margin-right: 10px;
+      }
+    }
+  }
+  .small-card{
+    border-radius: 5px;
+    padding: 3px;
+    height: 70px;
+  }
+  .secondary-btn-white{
+    background-color: $green !important;
+    border-width: 0 !important;
+    color: white;
+  }
+}
+
+.close-menu{
+  cursor: pointer;
+}
+.form-group.kit_kit_resource, .form-group.training_training_resource, .form-group.meeting_meeting_resource{
+  display: flex;
+  flex-wrap: wrap;
+}
+input[type="radio"]{
+  &:checked + .small-card{
+    background-color: $green-light;
+    p{
+      color: white;
+    }
+  }
+}
+
+// ++++++++++++++++++++++++++++++++
+
+
+.low-opacity:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+.low-opacity {
+  opacity: 0.3;
+  transition: 0.2s;
+  position: relative;
+}
+.image-selected {
+  opacity: 1;
+  transition: 0.2s;
+}
+.employee {
+  opacity: 1;
+  transition: 0.2s;
+}
+.employee-card {
+  background-color: $gray-light;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 20px 5px;
+  margin: 30px 20px;
+}
+.employee:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+  opacity: 1;
+}
+.employee-card h3 {
+  color: $green;
+}
+.employee-selected {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+  & h3 {
+    color: $blue;
+  }
+  & .employee-card {
+    border-color: $blue !important;
+  }
+}
+.chevron {
+  color: #4848DE;
+  position: absolute;
+  top: -10px;
+  right: 5px;
+}
+.employee-list {
+  box-shadow: 0 1px 10px 3px rgba(0,32,126,.1);
+  margin-top: 20px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.category-list {
+  padding: 30px 0;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.template {
+  opacity: 1;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 1px 10px 3px rgba(0,32,126,.1);
+  padding: 15px 40px 30px 40px;
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  & img {
+    height: 40px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+  }
+}
+
+.size-picture-onboarding {
+  height: 150px;
+}
+
+.meeting li {
+  margin: 0 60px;
+}
+.onboard{
+  position: relative;
+}
+.onboard i {
+  color: $green;
+}
+.onboard-checks {
+  padding-top: 50px;
+}
+.onboard .gray {
+  color: $gray;
+  font-weight: lighter;
+}
+.meeting-card{
+  display:block;
+  border-radius: 5px;
+  border: solid 1px;
+  border-color: $green;
+  color: #000000;
+  background: #ffffff;
+  box-shadow: 0 1px 15px 3px rgba(0,32,126,.1);
+  text-decoration: none;
+  margin:20px;
+  padding:0;
+  text-align:right;
+  & h2 {
+    color: $green;
+  }
+}
+.block-meeting, .block-training, .block-kit_resource{
+  padding: 50px;
+}
+section.no-top-padding{
+  padding-top: 50px;
+}
+#pencil{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+#pencil i{
+  font-size: 18px;
+  color: $gray;
+  cursor: pointer;
+}

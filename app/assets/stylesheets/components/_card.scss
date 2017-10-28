@@ -1,0 +1,170 @@
+#cards .app-body h4.lesson-padded {
+  padding: 30px 0;
+}
+.card-category {
+  padding:8px 16px;
+  border-radius: 20px;
+  color:white;
+  text-align:right;
+  margin-bottom: 5px;
+}
+.show_employee_lesson li{
+  list-style-type: none;
+  display: flex;
+}
+
+.cat-normal{
+  background-color: $blue-light;
+}
+.cat-normal a{
+  color: white;
+}
+.cat-normal a:hover{
+  color: white;
+  text-decoration: none;
+}
+.cat-progress{
+  background-color: white;
+  color: $blue-light !important;
+}
+.lesson-card{
+  display:block;
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: 0 1px 15px 3px rgba(0,32,126,.1);
+  text-decoration: none;
+  margin:20px;
+  padding:0;
+  cursor: pointer;
+  text-align:right;
+  transition: 0.2s;
+  & p {
+    margin-top: 10px;
+    padding: 8px;
+  }
+}
+.lesson-card:hover{
+  box-shadow: none;
+  transform: scale(1.1);
+  transition: 0.2s;
+  box-shadow: 0 1px 25px 3px rgba(0,32,126,.1);
+}
+.show-lesson{
+  padding: 15px 15px;
+  margin-bottom:0;
+  text-align:center;
+}
+.cat-1, .lesson-selected .show-lesson-cat-1{
+  color:white;
+  background-color: $cat1;
+}
+.cat-2, .lesson-selected .show-lesson-cat-2{
+  color:white;
+  background-color: $cat2;
+}
+.cat-3, .lesson-selected .show-lesson-cat-3{
+  color:white;
+  background-color: $cat3;
+}
+.cat-4, .lesson-selected .show-lesson-cat-4{
+  color:white;
+  background-color: $cat4;
+}
+.cat-5, .lesson-selected .show-lesson-cat-5{
+  color:white;
+  background-color: $cat5;
+}
+.cat-6, .lesson-selected .show-lesson-cat-6{
+  color:white;
+  background-color: $cat6;
+}
+.cat-7, .lesson-selected .show-lesson-cat-7{
+  color:white;
+  background-color: $cat7;
+}
+.card-name{
+  text-align:left;
+  padding:0 15px;
+  font-size: 24px;
+}
+.card-category {
+  padding:8px 15px 6px 15px;
+  border-radius: 20px;
+  color:white;
+  text-align:right;
+  margin-right: -15px;
+}
+.card-description {
+  min-height:30px;
+  text-align:left;
+  margin: 20px 0;
+  padding:0 15px;
+}
+.card-description h2 {
+  font-size: 24px;
+}
+.card-description p {
+  font-size: 13px;
+}
+.lesson-information-label{
+  padding:0 15px 0 15px;
+  color: $gray-dark;
+}
+.card-review{
+  position: relative;
+  padding:20px;
+  margin-bottom:60px;
+  background:white;
+  min-height: 200px;
+}
+
+#cards{
+}
+#cards .app-body ul{
+  width: 100%;
+}
+#cards .app-body li{
+  width: 100%;
+}
+#cards .app-body h4{
+  color:$blue-light;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+#cards .size-image img{
+  height: 60px;
+  margin: 45px auto auto auto;
+}
+#cards .app-body ul img{
+  margin-top: 0;
+  margin-right:10px;
+}
+#cards .app-body ul{
+  padding:0;
+}
+#cards .card{
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  background: white;
+}
+#cards .card:hover .front{
+  top:0;
+  transition: top 0.6s;
+}
+#cards .front{
+  max-height: 200px;
+  position: absolute;
+  z-index: 1;
+  top: 140px;
+  background: white;
+  color: $blue !important;
+  transition: top 0.6s;
+}
+#cards .back{
+  max-height: 200px;
+  position: absolute;
+}
+#cards .back{
+  transform: none !important;
+}

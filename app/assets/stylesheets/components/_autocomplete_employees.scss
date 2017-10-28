@@ -1,0 +1,45 @@
+.aa-dropdown-menu {
+  background-color: white;
+  border: 2px solid rgba(228, 228, 228, 0.6);
+  border-top-width: 1px;
+  width: 300px;
+  margin-top: 10px;
+  box-shadow: 4px 4px 0 rgba(241, 241, 241, 0.35);
+  font-size: 11px;
+  font-weight: lighter;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.aa-suggestion {
+  padding: 12px;
+  border-top: 1px solid rgba(228, 228, 228, 0.6);
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.aa-suggestion:hover, .aa-suggestion.aa-cursor {
+  background-color: rgba(241, 241, 241, 0.35);
+}
+.aa-suggestion > span:first-child {
+  color: $blue-dark;
+}
+.aa-suggestion > span:last-child {
+  text-transform: uppercase;
+  color: $blue-dark;
+}
+.aa-suggestion > span:first-child em, .aa-suggestion > span:last-child em {
+font-weight: 700;
+font-style: normal;
+color: white;
+background-color: $green;
+padding: 2px 0 0 2px;
+}

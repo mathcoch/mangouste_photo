@@ -1,0 +1,21 @@
+form.dropzone{
+  border-width: 4px;
+  border-color: $blue-dark;
+  border-radius: 20px;
+  background-color: white;
+  margin: 40px 10px;
+  &.has-error{
+    border-color: $red-error;
+  }
+  p{
+    font-weight: lighter;
+    color: $blue-dark;
+    font-size: 16px;
+  }
+  &:hover{
+    border-color: $blue;
+    p{
+      color: $blue;
+    }
+  }
+}

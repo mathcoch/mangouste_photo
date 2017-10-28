@@ -1,0 +1,215 @@
+/* Button */
+.button{
+  position: relative;
+  display: inline-block;
+  padding: 10px 25px 10px;
+  border-radius: 4px;
+  background-color: #2e2e2e;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.button-small{
+  padding: 8px 12px 8px;
+}
+
+.button-xsmall{
+  padding: 6px 9px 6px;
+  font-size: 10px;
+}
+
+.button-width-40px{
+  width: 40px !important;
+  min-width: 40px !important;
+}
+
+.button.button-gray{
+  text-decoration: none;
+  background-color: $gray-normal;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
+  -webkit-transition: background-color 150ms ease,box-shadow 150ms ease;
+  transition: background-color 150ms ease,box-shadow 150ms ease;
+}
+.button.button-gray:hover{
+  background-color: $green;
+  box-shadow:0 3px 10px 0 rgba(0,0,0,.2);
+  color: white;
+}
+.button-margin-right{
+  margin-right: 10px;
+}
+
+.button-home{
+  font-size: 16px;
+  margin: 20px;
+  margin-top: 50px;
+}
+
+.button.button-margins{
+  margin-right: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+.button.button-blue, .button.button-green{
+  margin-right: 5px;
+  display: inline-block;
+}
+.button.button-blue{
+  text-decoration: none;
+  background-color: #2e5bec;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
+  -webkit-transition: background-color 150ms ease,box-shadow 150ms ease;
+  transition: background-color 150ms ease,box-shadow 150ms ease;
+}
+.button.button-blue:hover{
+  background-color: #2e5bec;
+  box-shadow:0 3px 10px 0 rgba(0,0,0,.2);
+  color: #fff;
+}
+.button.button-light-blue{
+  color: $blue !important;
+  text-decoration: none;
+  background-color: $blue-ultra-light;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
+  -webkit-transition: background-color 150ms ease,box-shadow 150ms ease;
+  transition: background-color 150ms ease,box-shadow 150ms ease;
+}
+.button.button-light-blue:hover{
+  background-color: $blue-ultra-light;
+  box-shadow:0 3px 10px 0 rgba(0,0,0,.2);
+  color: $blue;
+}
+.button.button-green{
+  text-decoration: none;
+  background-color: $green;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
+  -webkit-transition: background-color 150ms ease,box-shadow 150ms ease;
+  transition: background-color 150ms ease,box-shadow 150ms ease;
+}
+.button.button-green:hover{
+  background-color: $green;
+  box-shadow:0 3px 10px 0 rgba(0,0,0,.2);
+  color: #fff;
+}
+
+
+
+
+
+
+.btn-list span{
+  color:$green
+}
+.secondary-btn-back{
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0 5px 0 35px;
+  margin: 10px 0;
+  color: #2cc280;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: image-url('marketing/buttons/secondary-btn-prev-arrow.png') top left 10px no-repeat;
+
+  background-size: 18px 18px;
+  transition: 0.2s;
+}
+.secondary-btn-back:hover{
+  color: #2cc280;
+  text-decoration: none;
+  background-position: top left;
+  transition: 0.2s;
+}
+.secondary-btn{
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0 35px 0 5px;
+  margin: 10px 0;
+  color: #2cc280;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: image-url('marketing/buttons/secondary-btn-arrow.png') top right 10px no-repeat;
+
+  background-size: 18px 18px;
+  transition: 0.2s;
+}
+.secondary-btn:hover{
+  color: #2cc280;
+  text-decoration: none;
+  background-position: top right;
+  transition: 0.2s;
+}
+.secondary-btn.prev-btn{
+  padding: 0 5px 0 25px;
+  background: image-url('marketing/buttons/secondary-btn-prev-arrow.png') top right no-repeat;
+}
+.secondary-btn.flat-btn {
+  background: none;
+  border: solid 1px;
+  padding: 8px 15px 8px 15px;
+  font-size: 15px;
+  &:hover {
+    border-color: $green;
+    background-color: $green;
+    color: $gray-light;
+  }
+}
+
+
+.secondary-btn-white{
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0 35px 0 5px;
+  margin: 10px 0;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: image-url('marketing/buttons/secondary-btn-arrow-white.png') top right 10px no-repeat;
+
+  background-size: 18px 18px;
+  transition: 0.2s;
+}
+.secondary-btn-white:hover{
+  color: white;
+  text-decoration: none;
+  background-position: top right;
+  transition: 0.2s;
+}
+
+.btn-grey {
+  background-color: $gray-light;
+  color: $blue;
+  border-radius: 8px;
+  & h4 {
+    margin: 10px 10px 8px 10px;
+  }
+}
+.button-cta{
+  position: relative;
+  display: inline-block;
+}
+.icon-new{
+  position: absolute;
+  top: 46px;
+  right: 2px;
+  z-index:1000;
+}
+.icon-beta{
+  position: absolute;
+  top: -12px;
+  left: -11px;
+  z-index:1000;
+}

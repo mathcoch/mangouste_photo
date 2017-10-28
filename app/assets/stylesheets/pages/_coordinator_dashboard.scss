@@ -1,0 +1,135 @@
+// Index
+#dashboard{
+  .count{
+    p{
+      margin: 0;
+      color: $gray-normal;
+      font-weight: lighter;
+    }
+  }
+  .kit{
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  .kit-card{
+    position: relative;
+    background-color: $gray-light;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 20px 5px;
+    margin: 30px 20px;
+    height: 160px;
+    h3{
+      color: $green;
+    }
+    span.badge{
+      background-color: $red-badge;
+      color: white;
+    }
+    .requests{
+      margin: auto;
+      width: 80%;
+      max-width: 120px;
+      background-color: $green;
+      border-radius: 10px;
+      color: white;
+      font-weight: lighter;
+      font-size: 11px;
+      &.zero{
+        background-color: $gray-light;
+        color: $green;
+        border-style: solid;
+        border-width: 1px;
+        border-color: $green;
+      }
+    }
+  }
+  .kit:hover {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+// Show
+#dashboard-orders{
+  .block{
+    padding: 50px;
+    .block-header{
+      margin-bottom: 60px;
+    }
+  }
+  #orders-search{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-end;
+    input{
+      width: 30%;
+      min-width: 200px;
+    }
+    p{
+      margin: 0;
+      color: $gray-normal;
+      font-weight: lighter;
+    }
+  }
+  #orders-list{
+    margin-bottom: 50px;
+    .line{
+      margin-bottom: 10px;
+      background-color: $gray-light;
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+      p{
+        margin: 3px 0 0 0;
+        color: $blue-dark;
+        font-weight: lighter;
+      }
+      .employee-name{
+        display: flex;
+        align-items: center;
+        img{
+          flex: 0 0 auto;
+          height: 30px;
+          margin-right: 10px;
+        }
+        p{
+          flex: 0 0 auto;
+          margin: 3px 0 0 0;
+        }
+      }
+    }
+  }
+  #orders-head{
+    p{
+      color: $green;
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+}
+
+// ORDERS STATUS
+.pending{
+  color: $orange;
+  font-size: 14px;
+  margin-right: 4px;
+}
+.delivered{
+  color: $green;
+  font-size: 14px;
+  margin-right: 4px;
+}
+.late{
+  color: $red-badge;
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+// ORDERS CTA BUTTONS
+.done{
+  background-color: $gray-normal !important;
+}
+.cancel{
+  background-color: $gray-medium !important;
+}
