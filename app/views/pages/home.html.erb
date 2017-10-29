@@ -121,7 +121,7 @@
     <div class="padded">
       <h2 class="text-green text-center">Prochaines dates</h2>
       <p class="text-large">
-        Selectionnez une ville ci-dessous et inscivez votre email.</br>
+        Selectionnez une ville ci-dessous et inscrivez votre email.</br>
         Nous vous envoyons un email avec plus de détail afin que vous puissiez valider votre inscription et convenir d'une date !
       </p>
       <div class="padded text-large">
@@ -174,30 +174,3 @@
     <%= render 'pages/logos_partners' %>
   </section>
 </div>
-
-
-<% content_for(:after_js) do %>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-  <script>
-  window.addEventListener("load", function(){
-  window.cookieconsent.initialise({
-    "position": "bottom-left",
-    "palette": {
-      "popup": {
-        "background": "#2a3453",
-        "text": "#ffffff"
-      },
-      "button": {
-        "background": "transparent",
-        "text": "#ffffff",
-        "border": "#ffffff"
-      }
-    },
-    "content": {
-      "href": "<%= root_path %>",
-      "message": "<%= t('.cookieconsent.message') %>",
-      "dismiss": "<%= t('.cookieconsent.button') %>"
-    },
-  })});
-  </script>
-<% end %>
