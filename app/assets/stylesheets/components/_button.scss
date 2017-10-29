@@ -97,7 +97,20 @@
   color: #fff;
 }
 
-
+.button.button-white{
+  text-decoration: none;
+  background-color: white;
+  color: $green;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
+  -webkit-transition: background-color 150ms ease,box-shadow 150ms ease;
+  transition: background-color 150ms ease,box-shadow 150ms ease;
+}
+.button.button-white:hover{
+  background-color: $green;
+  color: white;
+  box-shadow:0 3px 10px 0 rgba(0,0,0,.2);
+  color: #fff;
+}
 
 
 

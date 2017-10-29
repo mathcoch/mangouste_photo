@@ -15,9 +15,9 @@
           Tel maître, tel chien ?</br>
           Participez à notre campagne
         </h1>
-        <p>Ines Opifanti est la pour vous !</p>
+        <p>C'est gratuit, vous ne le regretterez pas !</p>
         <div class="button-cta">
-          <%= link_to "Inscrivez-vous gratuitement", root_path(anchor: 'mc_embed_signup'), class: "button button-green button-margins button-home" %>
+          <%= link_to "Inscrivez-vous", root_path(anchor: 'mc_embed_signup'), class: "button button-white button-margins button-home" %>
         </div>
       </div>
     </div>
@@ -26,6 +26,15 @@
   <section id="description" class="section section-white-home section-padded">
     <div class="container">
       <div class="row">
+        <div class="col-xs-12 catch-phrase">
+          <p>
+            Ines cherche des duos maître - chien pour faire de magnifiques photos.</br>
+            Pour vous c'est bien entendu gratuit et à l'issue de la séance vous <strong>repartez avec de superbes photos professionnelles</strong>.</br>
+            Les selectionnés, pourront être publiés dans le <strong>prochain ouvrage</strong> de photo d'Ines !</br></br>
+            Alors surveillez bien sa <strong>tournée</strong> et si elle passe près de chez vous, n'hésitez pas à vous inscrire !</br>
+            <%= link_to "C'est par ici", root_path(anchor: 'mc_embed_signup'), class: "button button-green button-margins button-home" %>
+          </p>
+        </div>
         <div class="col-xs-8 col-xs-offset-2 col-md-5 col-md-offset-0 gif-home">
           <%= image_tag "comparison_1.jpg", style:"width: 90%;" %>
         </div>
@@ -52,7 +61,7 @@
              <h4>Angélique P., Paris</h4>
              <p>
               <i class="fa fa-quote-left text-green" aria-hidden="true"></i>
-              Je trouve cela sympa de pouvoir faire de telles photos  ! J'ai reçu rapidement le lot de photos... mais c'est dommage qu'en ayant une 5ème place, on ne reçoit pas aussi une médaille !
+              Je trouve cela sympa de pouvoir faire de telles photos  ! C'est vraiment une superbe expérience. La séance est marrante et ne dure qu'une petite demi heure. Et le résultat... magistral
               <i class="fa fa-quote-right text-green" aria-hidden="true"></i>
             </p>
            </div>
@@ -73,7 +82,6 @@
          <div class="col-xs-12 col-md-4 employee">
            <div class="employee-card block">
              <div class="text-center"><%= image_tag 'participant_3.jpg', class:"avatar-medium text-center" %></div>
-             <h3 class="color-green text-center"><%= t('.testimonials.third.name_html') %></h3>
              <h4>Paul et Christelle, Paris</h4>
              <p>
               <i class="fa fa-quote-left text-green" aria-hidden="true"></i>
@@ -112,15 +120,30 @@
   <section id="contact-form" class="section no-top-margin">
     <div class="padded">
       <h2 class="text-green text-center">Prochaines dates</h2>
-       <ul class="padded text-large">
-         <li><p>16 au 28 octobre à <strong>Nantes</strong> (au Château des Ducs de Bretagne)</p></li>
-         <li><p>6 au 25 novembre à <strong>Paris</strong> (au studio Harcourt)</p></li>
-         <li><p>4 au 9 décembre à <strong>Bordeaux</strong> (au Château Pape Clément)</p></li>
-         <li><p>22 janvier au 17 févirer à <strong>Marseille</strong> (au Musée des Civilisations)</p></li>
-       </ul>
+      <p class="text-large">
+        Selectionnez une ville ci-dessous et inscivez votre email.</br>
+        Nous vous envoyons un email avec plus de détail afin que vous puissiez valider votre inscription et convenir d'une date !
+      </p>
+      <div class="padded text-large">
+        <div>
+          <input type="radio" id="nantes" name="city" value="nantes">
+          <label for="nantes"><p>16 au 28 octobre à <strong>Nantes</strong> (au Château des Ducs de Bretagne)</p></label>
+        </div>
+        <div>
+          <input type="radio" id="paris" name="city" value="paris">
+          <label for="paris"><p>6 au 25 novembre à <strong>Paris</strong> (au studio Harcourt)</p></label>
+        </div>
+        <div>
+          <input type="radio" id="bordeaux" name="city" value="bordeaux">
+          <label for="bordeaux"><p>4 au 9 décembre à <strong>Bordeaux</strong> (au Château Pape Clément)</p></label>
+        </div>
+        <div>
+          <input type="radio" id="marseille" name="city" value="marseille">
+          <label for="marseille"><p>22 janvier au 17 févirer à <strong>Marseille</strong> (au Musée des Civilisations)</p></label>
+        </div>
+      </div>
       <div class="text-center"><%= image_tag "ouvrage.jpg", style:"width: 40%" %></div>
-
-      <div>
+    <div>
 
                 <!-- Begin MailChimp Signup Form -->
         <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">

@@ -1,0 +1,5 @@
+meta_product_name: "Chien et maître"
+meta_title: "Chien et maître - Participez à notre compagne"
+meta_description: "Chien et maître - Participez à notre compagne"
+meta_image: "meta/image.png"          # should exist in `app/assets/images/`
+twitter_account: "@chien-et-maitre"                   # required for Twitter Cards
